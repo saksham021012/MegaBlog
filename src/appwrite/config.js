@@ -51,7 +51,7 @@ export class Service {
             console.log("Appwrite service :: updatePost :: error", error);
         }
     }
-
+    
     async deletePost(slug) {
         try {
             await this.databases.deleteDocument(
