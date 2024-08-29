@@ -3,12 +3,20 @@ import Footer from "./footer/Footer";
 import Container from './container/Container'
 import Logo from "./Logo";
 import LogoutBtn from "./header/LogoutBtn";
+import Login from "./Login";
+import Button from "./Button";
+import PostCard from "./PostCard";
+import Input from "./Input";
 
 
 export {
     Header,
-    Footer,
+    Footer, 
     Container,
     Logo,
-    LogoutBtn
+    LogoutBtn,
+    Login,
+    Button,
+    PostCard,
+    Input
 }
