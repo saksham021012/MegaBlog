@@ -7,6 +7,7 @@ import Login from "./Login";
 import Button from "./Button";
 import PostCard from "./PostCard";
 import Input from "./Input";
+import RTE from "./RTE"
 
 
 export {
@@ -18,5 +19,6 @@ export {
     Login,
     Button,
     PostCard,
+    RTE,
     Input
 }
