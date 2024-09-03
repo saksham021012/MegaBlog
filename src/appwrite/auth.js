@@ -40,13 +40,19 @@ export class AuthService {
 
     async getCurrentUser() {
         try {
-            await this.account.get();
+            const session = await this.account.getSession('current');
+            if (session) {
+                return await this.account.get();
+            } else {
+                console.log("No active session found.");
+                return null;
+            }
         } catch (error) {
             console.log("Appwrite service :: getCurrentUser :: error", error);
+            return null;
         }
-
-        return null;
     }
+    
 
     async logout() {
         try {
