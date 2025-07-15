@@ -36,8 +36,8 @@ export default function Post() {
                 appwriteService.deleteFile(post.featuredImage);
                 navigate("/");
             }
+            setShowDeleteModal(false);
         });
-        setShowDeleteModal(false);
     };
 
     if (isLoading) {
@@ -57,7 +57,7 @@ export default function Post() {
                 <div className="max-w-4xl mx-auto">
                     {/* Back Button */}
                     <div className="pt-8 pb-6">
-                        <button 
+                        <button
                             onClick={() => navigate(-1)}
                             className="inline-flex items-center text-gray-600 hover:text-gray-900 transition-colors group"
                         >
@@ -93,7 +93,7 @@ export default function Post() {
                                         <Link to={`/edit-post/${post.$id}`}>
                                             <Button className="bg-blue-600 hover:bg-blue-700">Edit</Button>
                                         </Link>
-                                        <Button 
+                                        <Button
                                             className="bg-red-600 hover:bg-red-700"
                                             onClick={() => setShowDeleteModal(true)}
                                         >
@@ -143,13 +143,13 @@ export default function Post() {
                         <h3 className="text-xl font-semibold text-gray-900 text-center mb-2">Delete Post</h3>
                         <p className="text-gray-600 text-center mb-6">Are you sure you want to delete this post? This action cannot be undone.</p>
                         <div className="flex space-x-3">
-                            <button 
+                            <button
                                 onClick={() => setShowDeleteModal(false)}
                                 className="flex-1 px-4 py-2.5 bg-gray-200 text-gray-800 font-medium rounded-lg hover:bg-gray-300 transition-colors"
                             >
                                 Cancel
                             </button>
-                            <button 
+                            <button
                                 onClick={deletePost}
                                 className="flex-1 px-4 py-2.5 bg-red-600 text-white font-medium rounded-lg hover:bg-red-700 transition-colors"
                             >
