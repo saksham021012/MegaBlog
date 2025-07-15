@@ -1,25 +1,18 @@
-<<<<<<< HEAD
 # dependencies
 node_modules/
 
-# production
+# production builds
 dist/
+dist-ssr/
 
-
-# Environment files
+# environment variables
 .env
 .env.*
 env
+src/.env
+*.local
 
-
-# misc
-.DS_Store
-*.log
-
-# local settings
-.vscode/
-=======
-# Logs
+# logs
 logs
 *.log
 npm-debug.log*
@@ -28,21 +21,15 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# system files
+.DS_Store
 
-# Editor directories and files
-.vscode/*
+# IDEs and editors
+.vscode/
 !.vscode/extensions.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-src/.env
-.env
->>>>>>> 290877343a1c513fd19fbe51ce0a07921ca3e82c
