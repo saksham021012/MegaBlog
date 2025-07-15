@@ -22,4 +22,4 @@ MegaBlog is a modern, full-featured blogging platform built using **Appwrite**. 
 - **Database & Auth**: Appwrite Services
 
 ---
->>>>>>> 290877343a1c513fd19fbe51ce0a07921ca3e82c
+
