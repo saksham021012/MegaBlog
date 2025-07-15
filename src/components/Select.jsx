@@ -6,15 +6,14 @@ function Select({
     className = "",
     ...props
 }, ref) {
-
     const id = useId();
 
     return (
-        <div className='w-full'>
+        <div className="w-full">
             {label && (
                 <label
                     htmlFor={id}
-                    className='inline-block mb-1 pl-1 text-sm font-medium text-gray-700'
+                    className="inline-block mb-1 pl-1 text-sm font-medium text-gray-700"
                 >
                     {label}
                 </label>

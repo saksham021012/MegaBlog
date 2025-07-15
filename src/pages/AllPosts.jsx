@@ -27,7 +27,6 @@ function AllPosts() {
         fetchPosts();
     }, []);
 
-    // Loading skeleton
     const LoadingSkeleton = () => (
         <div className="animate-pulse">
             <div className="bg-gray-300 rounded-lg h-48 mb-4"></div>
@@ -68,7 +67,7 @@ function AllPosts() {
                                 Something went wrong
                             </h2>
                             <p className="text-gray-600 mb-6">{error}</p>
-                            <button 
+                            <button
                                 onClick={() => window.location.reload()}
                                 className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md transition-colors"
                             >
@@ -100,7 +99,7 @@ function AllPosts() {
                             <p className="text-gray-600 mb-6">
                                 Be the first to share something amazing!
                             </p>
-                            <button 
+                            <button
                                 onClick={() => window.location.href = '/add-post'}
                                 className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md transition-colors"
                             >
@@ -111,8 +110,8 @@ function AllPosts() {
                 ) : (
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                         {posts.map((post) => (
-                            <div 
-                                key={post.$id} 
+                            <div
+                                key={post.$id}
                                 className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden"
                             >
                                 <PostCard {...post} />

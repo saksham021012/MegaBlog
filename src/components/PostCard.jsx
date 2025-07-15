@@ -1,6 +1,6 @@
-import React from 'react'
-import appWriteService from '../appwrite/config'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import appWriteService from '../appwrite/config';
+import { Link } from 'react-router-dom';
 
 function PostCard({ $id, title, featuredImage, $createdAt, authorName }) {
     const formatDate = (dateString) => {
@@ -74,7 +74,7 @@ function PostCard({ $id, title, featuredImage, $createdAt, authorName }) {
                 </div>
             </div>
         </Link>
-    )
+    );
 }
 
-export default PostCard
+export default PostCard;
